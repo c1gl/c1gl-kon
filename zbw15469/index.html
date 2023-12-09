@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>欢迎来到放课后茶话会！</title>
+  <link href="css/bandmember.css" rel="stylesheet" type="text/css">
+  <link href="css/container.css" rel="stylesheet" type="text/css">
+  <link href="css/kon.css" rel="stylesheet" type="text/css">
+  <link href="css/jieshao.css" rel="stylesheet" type="text/css">
+  <link href="css/澪.css" rel="stylesheet" type="text/css">
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link href="css/文字渐显.css" rel="stylesheet" type="text/css">
+  <link href="css/梓.css" rel="stylesheet" type="text/css">
+  <link href="css/唯.css" rel="stylesheet" type="text/css">
+  <link href="css/律.css" rel="stylesheet" type="text/css">
+  <link href="css/紬.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">	
+	<div id="kon">
+		<img src="image/kon.png" width="860" height="280" alt=""/>
+		<div id="jieshao">
+			<p id=jieshaotext>
+			  <strong>放学后TEA TIME（日语：放課後ティータイム）是动画《轻音少女》及其衍生作品中登场的一个女子乐队，简称"HTT"。由樱丘高中轻音部所组成，唯用了温泉和茶杯的下半部分作为记号。当时轻音部的成员有平泽唯、秋山澪、田井中律、琴吹䌷，以及第二年入社的中野梓，顾问是山中佐和子。在第二年的学园祭演出前正式决定乐团名称（实为大家在讨论时被佐和子擅自命名）。䌷负责替乐团作曲，澪则负责写作歌词，不过有少数的歌词是由唯创作出来的。
+		    </strong></p>
+		</div>
+	</div>
+	<div id="bandmember">
+	  <img src="image/律.png" id="ritsu" width="345" onmouseover="toggleBlur(this, true)" onmouseout="toggleBlur(this, false)">
+	  <img src="image/紬.png" id="mugi" width="345" onmouseover="toggleBlur(this, true)" onmouseout="toggleBlur(this, false)">
+	  <img src="image/澪.png" id="mio" width="345" onmouseover="toggleBlur(this, true)" onmouseout="toggleBlur(this, false)">
+	  <img src="image/梓.png" id="azusa" width="345" onmouseover="toggleBlur(this, true)" onmouseout="toggleBlur(this, false)">
+	  <img src="image/唯.png" id="yui" width="345" onmouseover="toggleBlur(this, true)" onmouseout="toggleBlur(this, false)">
+	  <div id="澪">
+      		<p class="fade-in-text">
+				1111111111111111
+			</p>
+	  	  
+   	  </div>
+	  <div id="紬">
+      		<p class="fade-in-text">
+				1111111111111111
+			</p>
+	  	  
+   	  </div>
+	  <div id="唯">
+      		<p class="fade-in-text">
+				1111111111111111
+			</p>
+	  	  
+   	  </div>
+	  <div id="梓">
+      		<p class="fade-in-text">
+				1111111111111111
+			</p>
+	  	  
+   	  </div>
+	  <div id="律">
+      		<p class="fade-in-text">
+				1111111111111111
+			</p>
+	  	  
+   	  </div>
+	</div>
+</div>
+
+<script>
+function toggleBlur(element, apply) {
+  	var images = document.querySelectorAll('#bandmember img');
+  	images.forEach(function (img) {
+    	if (img !== element) {
+      		if (apply) {
+        		img.classList.add('blur');
+        		img.classList.remove('unblur');
+      		}
+			else {
+        		img.classList.remove('blur');
+      		}
+    	}
+  	});
+ if (!apply) {
+    images.forEach(function (img) {
+    	if (img !== element) {
+        	img.classList.add('unblur');
+      	}
+    });
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+#bandmember {
+  	position: relative;
+  	width:1950px;
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	white-space: nowrap;
+  	margin-top: 100px;
+}
+
+#bandmember img {
+ 	max-width: 100%;
+  	margin-right: 30px;
+  	height: auto;
+	transition: transform 0.5s ease-in-out;
+}
+#bandmember img:first-child {
+  margin-left: 30px;
+}
+
+.blur {
+  	animation: blurIn 0.5s ease-in-out;
+	filter: blur(5px);
+}
+.unblur {
+	animation: blurOut 0.2s ease-in-out;
+	filter: blur(0);
+}
+#bandmember img:hover {
+	transform: scale(1.2);
+}
+
+@keyframes blurIn{
+  from {
+    filter: blur(0); /* 从完全清晰开始 */
+  }
+  to {
+    filter: blur(5px); /* 渐变到模糊状态 */
+  }
+}
+@keyframes blurOut {
+  from {
+    filter: blur(5px); /* 从模糊状态开始 */
+  }
+  to {
+    filter: blur(0); /* 渐变到完全清晰 */
+  }
+}

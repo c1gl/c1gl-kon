@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+#紬 {
+  	position: absolute;
+  	display: none;
+  	background-color: rgba(255,255,255,0.7);
+  	border-radius: 30px;
+  	box-shadow: 10px 10px 10px #555;
+  	padding: 20px;
+  	width: 300px;
+  	height: 600px;
+  	margin-left: 300px;
+}
+
+#bandmember img#mugi:hover ~ #紬{
+  	animation: fadeIn 0.5s ease-in-out;
+  	display: block;
+}
+
