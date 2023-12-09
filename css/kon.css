@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+#kon {
+   	display: flex;
+	width: 1900;
+  	align-items: center;
+  	margin-bottom: 100px;
+}
+
