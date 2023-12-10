@@ -3,14 +3,14 @@
 #紬 {
   	position: absolute;
   	display: none;
-  	background-color: rgba(255,255,255,0.7);
+  	background-color: rgba(241,247,217,0.8);
   	border-radius: 30px;
   	box-shadow: 10px 10px 10px #555;
 	padding-top: 30px;
 	padding-left: 20px;
   	width: 300px;
-  	height: 600px;
-  	left: 900px;
+  	height: 550px;
+  	left: 750px;
 }
 
 #bandmember a#t:hover ~ #紬{

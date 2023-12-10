@@ -11,12 +11,13 @@
 	padding-bottom: 20px;
 	width: 800px;
 	height: 180px;
-	position: relative;
-    top: 20px;
+	position: absolute;
+    top: 40px;
+	left: 700px;
 	box-shadow: 10px 10px 10px #888;
 }
 #jieshaotext{
 	text-shadow: 2px 2px 1px #aaa;
-	font-size: 20px;
+	font-size: 19px;
 }
 
